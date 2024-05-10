@@ -64,8 +64,8 @@ public class ConstruirSA {
             //Insertamos los 3 empleados
             String sql="INSERT INTO empleado(dni, nombre, apellido, acceso, activo) "
                     + "VALUES (34876444,'Nestor','Becerra',1,1),"
-                    + "(24877444,'Mario','Kempes',2,0)"
-                    + "(18900435,'Dario','Alcaraz',3,1)";
+                    + "(24877444,'Mario','Kempes',2,0),"
+                    + "(18900435,'Dario','Alcaraz',3,1);";
             
              PreparedStatement ps=conexion.prepareStatement(sql);
              int filas=ps.executeUpdate();
