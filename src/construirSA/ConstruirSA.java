@@ -118,7 +118,7 @@ public class ConstruirSA {
              PreparedStatement ps=conexion.prepareStatement(sql);
              ResultSet filas=ps.executeQuery();
              
-             System.out.println("\n======== Herramientas con stock mayor a 10 unidades =======");
+             System.out.println("\n========= Herramientas con stock mayor a 10 unidades ========");
              while(filas.next()){
                  System.out.println(filas.getString("nombre")+" -- "+filas.getString("descripcion"));
              }
